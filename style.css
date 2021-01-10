@@ -1,0 +1,185 @@
+body {
+    font-family: "Bodoni Moda";
+    margin-top: 60px;
+    background: white;
+}
+
+h1 {
+    font-family: 'Archivo Black';
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+h2, h3, h4, h5 {
+    text-transform: uppercase;
+    text-align: justify;
+    margin: 5px 0;
+}
+h2 {
+    font-size: 45px;
+    text-align: center;
+}
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+h4{
+    border: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+}
+p {
+    margin: 0;
+    font-size: 12px;
+}
+img {
+    border:3px double black ;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    border: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+}
+.header__title-aside {
+    text-transform: capitalize;
+    width: 100px;
+}
+.header__title-aside:last-of-type {
+    text-align: right;
+}
+.header__title, .header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__row {
+    padding: 10px;
+    border-top: 2px solid black;
+}
+.header__row h5 {
+    margin: 0;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-column-gap: 20px;
+}
+.content__col1__inner1_img {
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.content__col1__inner2, .content__col3__inner-2 {
+    border-top: 5px double black;
+    margin-top: 20px;
+}
+.content__col1__inner2_img1 {
+    width: 180px;
+    float: right;
+    margin-left: 10px;
+}
+.content__col1__inner2_img2 {
+    float: left;
+    width: 60%;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.content__col2_img1, .content__col2_img2, .content__col3_img1 {
+    width: 99%;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+.btn-pallet img, .btn-eye img{
+    width: 40px;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+}
+.btn-pallet:hover img,.btn-eye:hover img{
+    background: rgba(195, 195, 195,0.4);
+}
+.btn-pallet {
+    position: absolute;
+    top: -25px;
+    right: 0;
+}
+.btn-eye{
+    position: absolute;
+    top: -25px;
+    right: 30px;
+}
+.hide{
+    display: none;
+}
+.hidden {
+    opacity: 0;
+    transition: 1s;
+}
+.visible {
+    opacity: 1;
+    transition: 1s;
+}
+.bodyb {
+    background: black;
+}
+.containerb {
+    color: white;
+}
+.bigsize {
+    font-size: 150%;
+    font-family: sans-serif;
+}
+.bright {
+    text-decoration: underline #ffcb32;
+}
+.h1big{
+    font-size: 60px;
+}
+.text-no-decoration {
+    border: none;
+    padding: 0;
+}
+.text-decoration {
+    white-space: nowrap;
+    font-size: 15px;
+}
+.text-decoration:before {
+    content: '';
+    padding: 2px 25px 0 0;
+    background: url('content/star.svg') no-repeat;
+    background-size: 17px 17px;
+    background-position:  center ;
+}
+.text-decoration:after {
+    content: '';
+    padding: 2px 0 0 25px;
+    background: url('content/star.svg') no-repeat;
+    background-size: 17px 17px;
+    background-position:  center ;
+}

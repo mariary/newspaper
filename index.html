@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<script>
+    function ChangeColor() {
+        let palb = document.getElementById('btn-pallet-black');
+        let palw = document.getElementById('btn-pallet-white');
+        let eyeb = document.getElementById('btn-eye-black');
+        let eyew = document.getElementById('btn-eye-white');
+
+        let container = document.getElementById('container');
+        let body = document.getElementById('body');
+
+        array = [palb,palw,eyeb,eyew];
+        for (i = 0; i < array.length; i++) {
+            array[i].classList.toggle('hidden');
+            array[i].classList.toggle('visible');
+        };
+
+        container.classList.toggle('containerb');
+        body.classList.toggle('bodyb')
+    }
+    function ChangeSize() {
+        let text = [];
+        let main = [];
+        let aside = document.querySelectorAll('.header__title-aside') ;
+        for (i = 0; i < aside.length; i++) {
+            aside[i].classList.toggle('hide');
+        }
+        for (i = 1; i <= 5; i++){
+            text.push(document.querySelectorAll(`h${i}`));
+            main.push(document.querySelectorAll(`h${i}`));
+        };
+
+        text.push(document.querySelectorAll('p'));
+
+        for (i = 0; i < text.length; i++){
+            for (j = 0; j < text[i].length; j++) {
+                text[i][j].classList.toggle('bigsize');
+            }
+        };
+        for (i = 0; i < main.length; i++){
+            for (k = 0; k < main[i].length; k++) {
+                main[i][k].classList.toggle('bright');
+            };
+        };
+        document.querySelector('h1').classList.toggle('h1big')
+    };
+</script>
+<body class="body" id="body">
+<div class="container" id="container">
+    <div class="btn">
+        <button class="btn-pallet" onclick="ChangeColor()">
+            <img src="content/palette_black.svg" alt="" id="btn-pallet-black" class="btn-pallet visible">
+            <img src="content/palette_white.svg" alt="" id="btn-pallet-white" class="btn-pallet hidden">
+        </button>
+        <button class="btn-eye" onclick="ChangeSize()">
+            <img src="content/eye_black.svg" alt="" id="btn-eye-black" class="btn-eye visible">
+            <img src="content/eye_white.svg" alt="" id="btn-eye-white" class="btn-eye hidden">
+        </button>
+    </div>
+    <header class="header">
+        <div class="header__title">
+            <h5 class="header__title-aside">hоnest news from around the world</h5>
+            <h1>The old newspaper</h1>
+            <h5 class="header__title-aside">one of the world's great newspaper</h5>
+        </div>
+        <div class="header__row">
+            <h5>News worldwide since 1885</h5>
+            <h5>sunday morning</h5>
+            <h5>20 Aug.1992</h5>
+            <h5>cc</h5>
+            <h5>xxxvII</h5>
+            <h5>0,12$</h5>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__col1">
+            <div class="content__col1__inner1">
+                <h2>aliquam vel</h2>
+                <img src="content/1.PNG" alt="" class="content__col1__inner1_img">
+                <h4 class="text-no-decoration">Read about</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis tortor justo, non imperdiet nulla ullamcorper in. Cras accumsan porttitor diam. Phasellus
+                    dictum porta ornare. Aliquam viveorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis rra metus in sodales auctor. Maecenas venenatis velit ac turpis
+                    commodo, vitae auctor eros mollis. </p>
+            </div>
+            <div class="content__col1__inner2">
+                <h2>cillum dolore</h2>
+                <h3 class="text-decoration">Lorem ipsum dolor sit amet</h3>
+                <img src="content/2.PNG" alt="" class="content__col1__inner2_img1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis toorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis tortor justo.ehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis tortor justo.ehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis tortor justo. </p>
+                <img src="content/3.PNG" alt="" class="content__col1__inner2_img2">
+                <h4>read about</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan porttitor diam.</p>
+            </div>
+        </div>
+        <div class="content__col2">
+            <h3>aliquam vel risus metus</h3>
+            <h4>velit esse cillum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                iaculis tortor justo, non imperdiet nulla ullamcorper in. Cras accumsan porttitor diam. Phasellus
+                dictum porta ornare.Aliquam viverra metus in sodales auctor. Maecenas venenatis velit ac turpis
+                commodo, vitae auctor eros mollis. Donec tristique sem condimentum mi viverra feugiat. Aenean ut
+                nulla at mi tincidunt placerat non at diam.  </p>
+            <img src="content/5.PNG" alt="" class="content__col2_img1">
+            <p>Pellentesque hendrerit semper elit, at dapibus lectus
+                ullamcorper et.vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                ultrices commodo  Proin facilisis auctor nibh. Proin eget purus sollicitudin, condimentum lectus et,
+                consectetur enim. Phasellus eget urna finibus, sollicitudin purus ac.</p>
+            <h3>eiusmod tempor incididunt</h3>
+            <h4 class="text-no-decoration">+000 111 22 333</h4>
+            <img src="content/6.PNG" alt="" class="content__col2_img2">
+        </div>
+        <div class="content__col3">
+            <div class="content__col3__inner-1">
+                <img src="content/4.PNG" alt="" class="content__col3_img1">
+                <h3>dolore magna aliqua</h3>
+                <h4>utptate velit esse</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis tortor justo, non imperdiet nulla ullamcorper in. Cras accumsan porttitor diam. Phasellus
+                    dictum porta ornare. </p>
+            </div>
+
+            <div class="content__col3__inner-2">
+                <h3>fugiat nulla pariatur</h3>
+                <h4 class="text-decoration">irure dolor</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
+                    iaculis tortor justo, non imperdiet nulla ullamcorper in. Cras accumsan porttitor diam. Phasellus
+                    dictum porta ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
+                    ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    laoreet.Nulla vehicula sapien neque.  </p>
+            </div>
+        </div>
+    </div>
+
+    </row>
+</div>
+</body>
+</html>
