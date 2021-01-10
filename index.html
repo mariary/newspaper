@@ -12,52 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
-<script>
-    function ChangeColor() {
-        let palb = document.getElementById('btn-pallet-black');
-        let palw = document.getElementById('btn-pallet-white');
-        let eyeb = document.getElementById('btn-eye-black');
-        let eyew = document.getElementById('btn-eye-white');
-
-        let container = document.getElementById('container');
-        let body = document.getElementById('body');
-
-        array = [palb,palw,eyeb,eyew];
-        for (i = 0; i < array.length; i++) {
-            array[i].classList.toggle('hidden');
-            array[i].classList.toggle('visible');
-        };
-
-        container.classList.toggle('containerb');
-        body.classList.toggle('bodyb')
-    }
-    function ChangeSize() {
-        let text = [];
-        let main = [];
-        let aside = document.querySelectorAll('.header__title-aside') ;
-        for (i = 0; i < aside.length; i++) {
-            aside[i].classList.toggle('hide');
-        }
-        for (i = 1; i <= 5; i++){
-            text.push(document.querySelectorAll(`h${i}`));
-            main.push(document.querySelectorAll(`h${i}`));
-        };
-
-        text.push(document.querySelectorAll('p'));
-
-        for (i = 0; i < text.length; i++){
-            for (j = 0; j < text[i].length; j++) {
-                text[i][j].classList.toggle('bigsize');
-            }
-        };
-        for (i = 0; i < main.length; i++){
-            for (k = 0; k < main[i].length; k++) {
-                main[i][k].classList.toggle('bright');
-            };
-        };
-        document.querySelector('h1').classList.toggle('h1big')
-    };
-</script>
 <body class="body" id="body">
 <div class="container" id="container">
     <div class="btn">
@@ -95,7 +49,8 @@
                     laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
                     ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
                     iaculis tortor justo, non imperdiet nulla ullamcorper in. Cras accumsan porttitor diam. Phasellus
-                    dictum porta ornare. Aliquam viveorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    dictum porta ornare. Aliquam viveorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                    tristique felis id fringilla
                     laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
                     ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
                     iaculis rra metus in sodales auctor. Maecenas venenatis velit ac turpis
@@ -108,7 +63,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
                     laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
                     ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
-                    iaculis toorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    iaculis toorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id
+                    fringilla
                     laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
                     ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
                     iaculis tortor justo.ehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
@@ -130,11 +86,11 @@
                 iaculis tortor justo, non imperdiet nulla ullamcorper in. Cras accumsan porttitor diam. Phasellus
                 dictum porta ornare.Aliquam viverra metus in sodales auctor. Maecenas venenatis velit ac turpis
                 commodo, vitae auctor eros mollis. Donec tristique sem condimentum mi viverra feugiat. Aenean ut
-                nulla at mi tincidunt placerat non at diam.  </p>
+                nulla at mi tincidunt placerat non at diam. </p>
             <img src="content/5.PNG" alt="" class="content__col2_img1">
             <p>Pellentesque hendrerit semper elit, at dapibus lectus
                 ullamcorper et.vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
-                ultrices commodo  Proin facilisis auctor nibh. Proin eget purus sollicitudin, condimentum lectus et,
+                ultrices commodo Proin facilisis auctor nibh. Proin eget purus sollicitudin, condimentum lectus et,
                 consectetur enim. Phasellus eget urna finibus, sollicitudin purus ac.</p>
             <h3>eiusmod tempor incididunt</h3>
             <h4 class="text-no-decoration">+000 111 22 333</h4>
@@ -159,15 +115,16 @@
                     laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
                     ultrices commodo leo porta vel. Nullam consequat urna et purus lacinia, id ornare ante suscipit. In
                     iaculis tortor justo, non imperdiet nulla ullamcorper in. Cras accumsan porttitor diam. Phasellus
-                    dictum porta ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
+                    dictum porta ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis
+                    id fringilla
                     laoreet. Nulla vehicula sapien neque, et tincidunt sem mollis ornare. Sed accumsan mauris ex,
-                    ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id fringilla
-                    laoreet.Nulla vehicula sapien neque.  </p>
+                    ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique felis id
+                    fringilla
+                    laoreet.Nulla vehicula sapien neque. </p>
             </div>
         </div>
     </div>
-
-    </row>
 </div>
 </body>
+<script src="main.js"></script>
 </html>

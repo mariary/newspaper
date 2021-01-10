@@ -12,6 +12,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -46,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610265108063</updated>
-      <workItem from="1610265109174" duration="13762000" />
+      <workItem from="1610265109174" duration="13997000" />
     </task>
     <servers />
   </component>
